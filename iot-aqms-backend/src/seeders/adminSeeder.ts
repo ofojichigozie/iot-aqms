@@ -3,8 +3,8 @@ import bcrypt from 'bcryptjs';
 import Admin from '../models/admin.model';
 
 const ADMIN_NAME = 'AQMS Admin';
-const ADMIN_EMAIL = 'admin@aqms.com';
-const ADMIN_PASSWORD = 'admin123';
+const ADMIN_EMAIL = 'admin@aqms.dev';
+const ADMIN_PASSWORD = 'Admin@AQMS123';
 
 export const seedAdmin = async (): Promise<void> => {
   const existing = await Admin.findOne({ email: ADMIN_EMAIL });
